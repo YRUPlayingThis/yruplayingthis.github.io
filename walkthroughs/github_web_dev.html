@@ -2,11 +2,137 @@
 <html>
   <head>
     <title>Start a Simple Github Site</title>
-    
+    <link rel="stylesheet" href="/style.css">
   </head>
+
   <body>
-    <h1>How I started my first Github website <br>(with no experince)</h1>
-    
+    <header id="top">
+      <a href="/girl.html">
+        Cringe Alert Here 
+        <br>(Don't Click me)
+      </a>
+    </header>
+
+    <article>
+      <header>
+        <h1>
+          How I Started my First Github Website <br>(With No Experince)
+        </h1>
+        <p>
+          As of <time><b>5-14-2025</b></time>, I have just figured out how to launch and edit my own website and repository through the use of 
+          <a href="https://git-scm.com/">Git</a>, and <a href="https://github.com/">Github</a>. <br>
+        It is now my intention to showcase to you, reader, how I managed to do it with no previous experience with Github, or web development!
+      </p>
+      
+        <nav><br>
+          <label for="contents" style="font-size: 160%;">Sections:</label>
+          <ul id="contents" style="font-size: 110%;">
+            <li> <a href="#reso">Resources Used</a> </li>
+            <li> <a href="#git">Essential Github Setup</a> </li>
+            <li> <a href="#op">Optional Way to Edit Website Locally</a> </li>
+            <li> <a href="#mis">Personal Mistakes to Learn From</a> </li>
+          </ul><br>
+        </nav>
+      </header>
+
+      <main>
+        <!--Resources-->
+        <section>
+          <h2 id="reso">Resources Used</h2>
+          <ul>
+            <li>(Required) <a href="https://github.com/">Github</a></li>
+            <li>(Optional) <a href="https://code.visualstudio.com/download">Microsoft Studio Code</a></li>
+            <li>(optional) <a href="https://git-scm.com/downloads">Git for Windows</a></li>
+          </ul>
+        </section>
+
+        <!--Github-->
+        <section>
+          <h2 id="git">Setting up with Github</h2>
+          <p>In this section we will go over the bare minimum to host a github website, requiring only a device and the website itself</p>
+          <ol>
+            <li>Create your Github Account</li>
+            <li>Create your first (or new) repository, name it:<br>
+              <code>(your Username here).github.io</code><br>
+              Ensure that your github username is before the first period and in ALL lowercase characters!
+            </li>
+            <li>Go to the Main Branch and click <code>Add file -> Create new file</code> and call it <code>index.html</code></li>
+            <li>Go to your <b>Repo Settings > Pages</b> and then set your branch to <code>main</code> (in the root folder)</li>
+            <li>If all well, your html code, and therefore webpage, is now hosted at<br><code>https://(your username here).github.io</code></li>
+          </ol>
+          <h3>Small Optional steps I Followed</h3>
+          <p>I personally took time to add a few different folders within my main directory with their own index.htmls within them to create multiple pages within my website.
+            <br>If you wish to do the same, then when creating a new file, write <br><code>(folder name)/index.html</code>
+          <br>This creates a new default directory and the folder that contains it, visiting it with something such as <code>(username)/github.io/(folder name)</code> now takes the user to that page!</p>
+          <p>I also created a <code>style.css</code> file in the main directory, putting most of all my styling preferences on it and referring to it within all my pages' html code. Its as simple as adding a file and naming it <b>style.css</b>
+          <br>This allows me to add the formating, colors, and text effects you see within this website now!</p>
+        </section>
+
+        <!--Optional Things-->
+        <section>
+          <h2 id="op">Editing your Github Repo Locally</h2>
+            <p>
+              These are now the steps that I myself followed to begin working on this very website
+              from my pc. After these steps, you will get to code offline, 
+              check how your edits look before a commitment, and see your files in a neatly organized fashion.
+              With these steps, life will get a lot easier to actively work on your repo!
+            </p>
+          <ol>
+            <li>
+              Download both Visual Studio Code, and Git for Windows from their websites
+            </li>
+            <li>
+              Once Git has downloaded, set your Git identity by doing the following:<br>
+              <code>
+                git config --global user.name "name"
+                <br>git config --global user.email "your@email.com"
+              </code><br>
+              Replace the quoted text with your name, and then email respectively
+            </li>  
+            <li>
+              Open Visual Studio Code and sign in with your GitHub Account
+            </li>
+            <li>
+              Clone your repo into VS Code with the GitHub URL button by going to your repo, clicking on<br>
+              <code>Code -> HTTPS </code> and then copy the link right below the HTTPS<br>
+              In VS Code, open the command palette with <code>Ctrl + Shift + P</code>
+               and type <code>Git: Clone</code><br>
+               After pressing enter you should be able to paste your link in.
+               <br>You may also try to clone your repo link through the VS Code <b>Source Control Tab</b> on the left side of the program
+            </li>
+            <li>
+              To test your files and site before committing your changes, 
+              click on Extensions on the left tab (bottom option)
+              and search for <b>Live Server Extension</b>. This will allow you to right click 
+              on your html file and run it on a live server, 
+              seeing the web page to ensure your edits are correct before you committ your changes!
+            </li>
+            <li>
+              Now you can work freely with your repos synced, simply make sure to save your files when done editing them
+              <br>(<code>Ctrl + S</code>) and when you're happy with your work, go to the <b>Source Control</b> tab
+              and click commit (the message is a summary of your update). This updates your local repository. 
+              <br>Press the <b>Sync</b> button in the same spot to then share your changes to your Github repo online
+              and boom!
+              <br>You can now freely edit and review your repo on your local pc 
+              and then share changes to the website without even touching a web browser!
+            </li>
+            </ol>
+        </section>
+
+        <!--Mistakes-->
+        <section>
+          <h2 id="mis">Personl Mistakes to Learn From</h2>
+          <p>
+            SCREW YOU I NEVER MAKE MISTAKES, I AM THE BEST!!!
+            <br>(Please just let me ride the high of accomplishing this, I beg you)
+          </p>
+        </section>
+      </main>
+
+      <footer>
+        <h3><a href="#top">Take me back to the Top</a></h3>
+      </footer>
+    </article>
   </body>
   
 </html>
