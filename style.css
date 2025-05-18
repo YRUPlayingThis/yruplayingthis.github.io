@@ -1,48 +1,115 @@
 /*
-This is my Websites styling data
+📜 Aesthetically Refined Styling for Themed Website
 */
-html{
-  scroll-behavior: smooth;
-}
 
+html {
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+}
 
 body {
-  background-color: #052038;
-  color: #f1ae48;
+  background-color: #F7F6F3; /* Slightly warmer white */
+  color: #3A3630; /* Richer ink brown */
+  font-family: 'Spectral', 'Segoe UI', serif;
+  font-size: 1.2rem;
+  line-height: 1.8;
+  padding: 3rem 6vw;
+  margin: 0 auto;
+  max-width: 960px;
   text-align: center;
-  font-family: 'Times New Roman', Times, serif;
-  font-size: 140%;margin-left: 6%;
-  margin-inline: 15%;
 }
 
-main,header,footer{
-  background-color: #0f2c46;
+/* Header Section */
+header, header p {
+  background-color: #E4CFA4; /* Brushed gold */
+  padding: 3rem 2rem;
+  color: #2D2B28; /* Charcoal accent */
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  margin-bottom: 2rem;
 }
 
-li{
-margin-inline: 20%;
-margin-bottom: 2%;
+/* Navigation Bar */
+nav {
+  background-color: #F4E8D0; /* Warm ivory gold */
+  padding: 1rem 2rem;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
 }
 
-p{
-  margin-inline: 10%;
+
+/*    Anchors/links here:    */
+nav a { margin: 0 1rem;}
+
+ a:hover { color: #B97745; /* Polished copper highlight */}
+
+a{
+  color: #7C4B33; /* Soft copper */
+  text-decoration: underline;
+  font-weight: 500;
+  transition: color 0.3s ease ;
 }
 
-h1,h2,h3,h4,h5,h6{
-  text-decoration-thickness: 200%;
-  color: #f5b24f;
+/* Main Content Area */
+main {
+  background-color: #FFFFFF; /* Clean white paper */
+  padding: 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.04);
+  margin-bottom: 2rem;
 }
 
-code{
-  background-color: #314457;
-  color: rgb(194, 176, 144);
+/* Headings */
+h1, h2, h3 {
+  color: #7A5C3D; /* Gold-burnished copper */
+  margin-top: 0;
+  margin-bottom: 1rem;
 }
 
-/*Anchors (links) styles*/
-a {
-      color:#ffcc88;
+h4, h5, h6 {
+  color: #A1876D; /* Faded warm bronze */
+  margin-bottom: 1rem;
 }
-a:hover{
-  color:#66c5e2;
 
+/* Paragraphs */
+p {
+  color: #4C4A47; /* Soft charcoal */
+  margin-bottom: 1.2rem;
+  text-align: left;
+}
+
+/* List Styling */
+li {
+  margin-bottom: 1rem;
+  text-align: left;
+  padding-left: 1rem;
+}
+
+/* Horizontal Divider */
+hr {
+  border: none;
+  border-top: 1px solid #E0D3BF; /* Gold dust divider */
+  margin: 2rem auto;
+  width: 60%;
+}
+
+/* Code Snippet Styling */
+code {
+  background-color: #f4f0e6;
+  color: #7C4B33; /* Copper */
+  padding: 0.3em 0.6em;
+  border-radius: 5px;
+  font-family: 'Courier New', monospace;
+}
+
+/* Footer */
+footer, footer p, footer a{
+  background-color: #2B1F18; /* Deep copper brown */
+  padding: 2rem;
+  color: #F4EADC; /* Cream gold text */
+  border-radius: 8px;
+  font-size: 0.95rem;
+  margin-top: 3rem;
 }
