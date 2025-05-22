@@ -43,7 +43,7 @@ nav {
 /*    Anchors/links here:    */
 nav a { margin: 0 1rem;}
 
- a:hover { color: #B97745; /* Polished copper highlight */}
+a:hover { color: #B97745; /* Polished copper highlight */}
 
 a{
   color: #7C4B33; /* Soft copper */
