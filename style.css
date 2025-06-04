@@ -80,6 +80,10 @@ p {
   text-align: left;
 }
 
+summary{
+  font-size: 1.4rem;
+}
+
 /* List Styling */
 li {
   margin-bottom: 1rem;
