@@ -1,6 +1,4 @@
-/*
-📜 Aesthetically Refined Styling for Themed Website
-*/
+
 
 html {
   scroll-behavior: smooth;
@@ -116,4 +114,70 @@ footer, footer p, footer a{
   border-radius: 8px;
   font-size: 0.95rem;
   margin-top: 3rem;
+}
+
+/*-===============================================
+          Section for Note Page Classes
+==================================================*/
+.note-block {
+  margin-bottom: 2.5rem;
+  border: 1px solid #E0D3BF;
+  padding: 1.5rem;
+  border-radius: 10px;
+  background-color: #FFFFFF;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  text-align: left;
+}
+
+.note-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #7A5C3D;
+  cursor: pointer;
+  padding: 0.5rem 0;
+}
+
+.question {
+  margin-bottom: 1rem;
+}
+
+button {
+  margin-top: 0.3rem;
+  padding: 0.4rem 0.8rem;
+  background-color: #E4CFA4;
+  border: none;
+  border-radius: 4px;
+  font-weight: 600;
+  color: #3A3630;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+button:hover {
+  background-color: #D9B97F;
+}
+
+.answer {
+  background-color: #f4f0e6;
+  padding: 0.5rem 0.8rem;
+  margin-top: 0.3rem;
+  border-left: 4px solid #B97745;
+  border-radius: 4px;
+}
+
+.hidden {
+  display: none;
+}
+
+.summary a {
+  display: inline-block;
+  margin-top: 0.8rem;
+  font-size: 0.95rem;
+  text-decoration: none;
+  color: #7C4B33;
+  font-weight: 500;
+}
+.summary p {
+    padding: .6rem 1rem;
+    background-color: #fff9ee;
+    border-radius: 4px;
 }

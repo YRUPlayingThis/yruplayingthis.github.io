@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Test Format</title>
+        <link rel="stylesheet" href="/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;600&display=swap" rel="stylesheet">
+        <!--Script for buttons to show answers-->
+        <script>
+  			function toggleAnswer(button) {
+    		const answer = button.nextElementSibling;
+    		if (answer.classList.contains('hidden')) {
+      			answer.classList.remove('hidden');
+      			button.textContent = 'Hide Answer';
+    		} else {
+      			answer.classList.add('hidden');
+      			button.textContent = 'Show Answer';
+    		}
+  			}
+		</script>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <a href="/notes/index.html">Return to Notes</a>
+            </nav>
+            <h1>TryHackMe Pre-Security Path</h1>
+        </header>
+        <main>
+            <!-- Unit Example 1 -->
+            <details class="note-block" open>
+            <!-- This is the clickable title for the entire unit section -->
+            <summary class="note-title" id="unit1">Introduction to Cyber Security</summary>
+
+            <!-- Notes Section -->
+            <section>
+                <h3>Notes</h3>
+                <ul>
+                  <li>Note</li>
+
+                </ul>
+            </section>
+
+            <!-- Questions & Answers Section -->
+            <section>
+              <h3>Questions & Answers</h3>
+
+              <div class="question">
+                <p><strong>Q:</strong> Question?</p>
+                <button onclick="toggleAnswer(this)">Show Answer</button>
+                <p class="answer hidden">The answer to your first question.</p>
+              </div>
+
+            </section>
+
+            <!-- Summary Section -->
+            <section class="summary">
+              <h3>Summary</h3>
+              <p>Insert summary</p>
+              <!-- Back to top of this section -->
+              <a href="#unit1">⬆ Back to Top of Section</a>
+            </section>
+          </details>
+
+        </main>
+    </body>
+</html>
